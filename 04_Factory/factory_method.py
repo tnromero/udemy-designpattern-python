@@ -41,7 +41,7 @@ class Perfil(metaclass=ABCMeta):
     def get_secoes(self):
         return self.secoes
     
-    def add_secao(self, secao):
+    def add_secao(self, secao: Secao):
         self.secoes.append(secao)
 
 class Linkedin(Perfil):

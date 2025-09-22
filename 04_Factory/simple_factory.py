@@ -17,7 +17,7 @@ class Gato(Animal):
 # Fabrica
 class Fabrica:
 
-    def criar_animal_falante(self, tipo):
+    def criar_animal_falante(self, tipo: Animal):
         try:
             return eval(tipo)().falar()
         except NameError as e:

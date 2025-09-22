@@ -30,7 +30,7 @@ class AgenciaNoticia:
         for inscrito in self.__inscritos:
             inscrito.notificar()
 
-    def adicionar_noticia(self, noticia):
+    def adicionar_noticia(self, noticia: str):
         self.__ultima_noticia = noticia
 
     def mostrar_noticia(self) -> str:

@@ -1,4 +1,4 @@
-from abc import ABC, abstractclassmethod
+from abc import ABC, abstractmethod
 from uuid import uuid4
 
 
@@ -7,7 +7,7 @@ class Pessoa(ABC):
     def __init__(self: object, nome: str) -> None:
         self.__nome = nome
     
-    @abstractclassmethod
+    @abstractmethod
     def ganhar_dinheiro(self: object) -> None:
         pass
 

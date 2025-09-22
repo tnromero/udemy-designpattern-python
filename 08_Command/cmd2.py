@@ -24,7 +24,7 @@ class Receiver:
     
 class Invoker:
 
-    def comando(self, cmd):
+    def comando(self, cmd: Comando):
         self.cmd = cmd
     
     def executar(self):

@@ -27,7 +27,7 @@ class OrdemCompra(Ordem):
 # Comando Concreto
 class OrdemVenda(Ordem):
 
-    def __init__(self, mercado_acao):
+    def __init__(self, mercado_acao: MercadoAcao):
         self.mercado_acao = mercado_acao
     
     def executar(self):

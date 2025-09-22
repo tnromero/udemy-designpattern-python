@@ -16,18 +16,18 @@ class Objeto:
 
 class ObservadorA:
 
-    def __init__(self, objeto):
+    def __init__(self, objeto: Objeto):
         objeto.registrar(self)
     
-    def notificar(self, objeto, *args):
+    def notificar(self, objeto: Objeto, *args):
         print(f'O {type(self).__name__} recebeu uma {args[0]} de {objeto}')
 
 class ObservadorB:
 
-    def __init__(self, objeto):
+    def __init__(self, objeto: Objeto):
         objeto.registrar(self)
     
-    def notificar(self, objeto, *args):
+    def notificar(self, objeto: Objeto, *args):
         print(f'O {type(self).__name__} recebeu uma {args[0]} de {objeto}')
 
 

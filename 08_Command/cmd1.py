@@ -1,6 +1,6 @@
 class Instalador:
 
-    def __init__(self, fonte, destino):
+    def __init__(self, fonte: str, destino: str):
         self.opcoes = []
         self.destino = destino
         self.fonte = fonte
